@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Microsoft Windows </title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="vid-container">
+            <video id="Oldpc-vid" poster="icons/pcposter.png" muted>
+                <source src="video/retropcvid1.mp4" type="video/mp4">
+            </video>
+            <div class="hint">
+                Hover over PC to start.
+            </div>
+        </div>
+
+        <div class="error-popup" id="popup-overlay">
+            <div class="error-content">
+                <h3> Error Message
+                    <button class="exit-btn"> X </button>
+                </h3>
+                <p>
+                    The system has reverted back to Windows 95. Would you like to proceed?
+                </p>
+
+                <a id="proceed-btn" href="pages/home.html" class="button-style"> Proceed </a>
+                <button id="replay-btn"> Replay Intro </button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+    
+</body>
+</html>
