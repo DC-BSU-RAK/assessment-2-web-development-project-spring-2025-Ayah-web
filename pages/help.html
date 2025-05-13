@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Get Help </title>
-
+    <title>Get Help</title>
     <link rel="stylesheet" href="help.css">
 </head>
-
 <body>
-    
     <div class="navbar">
-        <div class="nav-item">
+         <div class="nav-item">
             <img src="../icons/icon1.png" alt="Intro Video Icon" class="nav-icon">
             <a href="index.html" class="nav-link"> Intro Video </a>
         </div>
@@ -37,25 +34,31 @@
         </div>
     </div>
 
-    
     <div class="paint-ui">
-        
         <div class="paint-menu-bar">
-            <span> File </span>
-            <span> Edit </span>
-            <span> View </span>
-            <span> Image </span>
-            <span> Colors </span>
-            <span> Help </span>
+            <span>File</span>
+            <span>Edit</span>
+            <span>View</span>
+            <span>Image</span>
+            <span class="colors-menu">Colors ▼
+                <div class="color-options">
+                    <div class="color-option" style="background-color: #000000;"></div>
+                    <div class="color-option" style="background-color: #FF0000;"></div>
+                    <div class="color-option" style="background-color: #00FF00;"></div>
+                    <div class="color-option" style="background-color: #0000FF;"></div>
+                    <div class="color-option" style="background-color: #FFFF00;"></div>
+                    <div class="color-option" style="background-color: #FF00FF;"></div>
+                    <div class="color-option" style="background-color: #00FFFF;"></div>
+                    <div class="color-option" style="background-color: #FFFFFF;"></div>
+                </div>
+            </span>
+            <span>Help</span>
         </div>
 
-        
-        <div class="paint-canvas" id="paintCanvas"></div>
-
+        <canvas id="paintCanvas" class="paint-canvas"></canvas>
 
         <div class="contact-form">
-            <h3> Contact Support </h3>
-
+            <h3>Contact Support</h3>
             <form>
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
