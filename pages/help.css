@@ -148,11 +148,11 @@ body {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  20% { transform: translateY(-10px); }
-  40% { transform: translateY(0); }
-  60% { transform: translateY(-5px); }
-  80% { transform: translateY(0); }
+  0%, 100% { transform: translate(-50%, -50%); } 
+  20% { transform: translate(-50%, calc(-50% - 10px)); } 
+  40% { transform: translate(-50%, -50%); }
+  60% { transform: translate(-50%, calc(-50% - 7px)); }
+  80% { transform: translate(-50%, -50%); }
 }
 
 .contact-form {
@@ -164,10 +164,9 @@ body {
     background-color: white;
     padding: 20px;
     border: 2px solid #808080;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 3px 3px 5px #35387aaa;
     z-index: 70;
     pointer-events: auto;
-    transition: transform 0.3s ease;
 }
 
 .contact-form:hover {
