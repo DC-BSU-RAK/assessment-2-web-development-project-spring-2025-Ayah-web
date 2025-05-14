@@ -147,7 +147,7 @@ body {
     z-index: 60;
 }
 
-@keyframes excitedBounce {
+@keyframes bounce {
   0%, 100% { transform: translateY(0); }
   20% { transform: translateY(-10px); }
   40% { transform: translateY(0); }
@@ -168,6 +168,14 @@ body {
     z-index: 70;
     pointer-events: auto;
     transition: transform 0.3s ease;
+}
+
+.contact-form:hover {
+  animation: bounce 0.8s ease 2.5; 
+}
+
+.contact-form:not(:hover) {
+  animation: none;
 }
 
 .contact-form h3 {
