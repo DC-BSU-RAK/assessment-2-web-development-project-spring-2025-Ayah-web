@@ -164,7 +164,7 @@ body {
     background-color: white;
     padding: 20px;
     border: 2px solid #808080;
-    box-shadow: 3px 3px 5px #35387aaa;
+    box-shadow: 5px 5px 5px #383da7b1;
     z-index: 70;
     pointer-events: auto;
 }
