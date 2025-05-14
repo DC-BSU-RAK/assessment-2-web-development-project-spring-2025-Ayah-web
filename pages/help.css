@@ -167,6 +167,7 @@ body {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     z-index: 70;
     pointer-events: auto;
+    transition: transform 0.3s ease;
 }
 
 .contact-form h3 {
