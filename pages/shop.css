@@ -1,3 +1,4 @@
+/* body styling */
 body {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@ body {
     position: relative;
 }
 
+/* navbar styling */
 .navbar {
     position: absolute;
     left: 20px;
@@ -49,12 +51,14 @@ body {
     padding: 4px;
 }
 
+/* wrapper styling */
 .wrapper {
     padding: 120px 20px 60px;
     min-height: calc(100vh - 180px);
     box-sizing: border-box;
 }
 
+/* shop tab styling */
 .shop-tab {
     position: absolute;
     top: 60px;
@@ -109,6 +113,7 @@ body {
     margin-bottom: 30px;
 }
 
+/* upgrade button styling */
 .upgrade-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -126,6 +131,7 @@ body {
     color: white;
 }
 
+/* exit button styling */
 .exit-btn {
     width: 30px;
     height: 30px;
@@ -143,6 +149,7 @@ body {
     color: white;
 }
 
+/* footer styling */
 .footer {
     position: fixed;
     bottom: 0;
