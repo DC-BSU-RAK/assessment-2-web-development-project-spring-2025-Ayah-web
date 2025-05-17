@@ -1,3 +1,4 @@
+/* body styling */
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@ body {
     cursor: default;
 }
 
+/* navbar styling */
 .navbar {
     z-index: 1000; 
     position: absolute;
@@ -52,6 +54,7 @@ body {
     padding: 4px;
 }
 
+/* paint ui styling */
 .paint-ui {
     position: fixed;
     top: 0;
@@ -91,6 +94,7 @@ body {
     color: white;
 }
 
+/* colour menu and options styling */
 .colors-menu {
     position: relative;
 }
@@ -124,6 +128,7 @@ body {
     transform: scale(1.2);
 }
 
+/* erase button styling and hover animation */
 #erase-btn {
     background-color: #c0c0c0;
     padding: 0 5px;
@@ -146,6 +151,7 @@ body {
     z-index: 60;
 }
 
+/* keyframe for contact form */
 @keyframes bounce {
   0%, 100% { transform: translate(-50%, -50%); } 
   20% { transform: translate(-50%, calc(-50% - 10px)); } 
@@ -154,6 +160,7 @@ body {
   80% { transform: translate(-50%, -50%); }
 }
 
+/* contact form styling */
 .contact-form {
     position: absolute;
     top: 50%;
