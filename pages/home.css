@@ -1,3 +1,4 @@
+/* body styling */
 body {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@ body {
     position: relative;
 }
 
+/* navbar styling and its elements/items */
 .navbar {
     position: absolute;
     left: 20px;
@@ -27,6 +29,7 @@ body {
     transition: padding-left 0.2s ease;
 }
 
+/* hover animation for navbar elements */
 .nav-item:hover {
     padding-left: 20px;
     text-decoration: white underline;
@@ -49,6 +52,7 @@ body {
     padding: 4px;
 }
 
+/* wrapper styling */
 .wrapper {
     display: flex;
     height: 100vh;
@@ -57,6 +61,7 @@ body {
     box-sizing: border-box;
 }
 
+/* welcome tab styling and its elements */
 .welcome-tab {
     flex: 1;
     display: flex;
@@ -110,6 +115,7 @@ body {
     display: block;
 }
 
+/* consistent exit button styling */
 .exit-btn {
     position: absolute;
     right: 6px;
@@ -128,6 +134,7 @@ body {
     cursor: pointer;
 }
 
+/* exit button hover animation */
 .exit-btn:hover {
     background-color: #ff0000;
     color: white;
@@ -137,6 +144,7 @@ body {
     border-color: #808080 #ffffff #ffffff #808080;
 }
 
+/* footer styling */
 .footer {
     position: fixed;
     bottom: 0;
