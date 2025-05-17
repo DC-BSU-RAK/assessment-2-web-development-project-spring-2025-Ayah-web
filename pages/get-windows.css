@@ -1,3 +1,4 @@
+/* body styling */
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@ body {
     overflow-x: hidden;
 }
 
+/* navbar styling */
 .navbar {
     position: absolute;
     left: 20px;
@@ -56,6 +58,7 @@ body {
     box-sizing: border-box;
 }
 
+/* solitaire styling */
 .solitaire-tab {
     position: absolute;
     top: 60px; 
@@ -133,6 +136,7 @@ body {
     border-radius: 5px;
 }
 
+/* exit button styling */
 .exit-btn {
     width: 30px;
     height: 30px;
@@ -150,6 +154,7 @@ body {
     color: white;
 }
 
+/* footer styling */
 .footer {
     position: fixed;
     bottom: 0;
