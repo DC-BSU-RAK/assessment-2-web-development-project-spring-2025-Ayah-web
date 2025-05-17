@@ -1,5 +1,7 @@
+// loading dom
 document.addEventListener('DOMContentLoaded', function() {
     
+    // exit button functionality
     const exitBtn = document.querySelector('.exit-btn');
     if (exitBtn) {
         exitBtn.addEventListener('click', function() {
@@ -15,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // get ref for carousel elements
     const carouselContainer = document.querySelector('.carousel-container');
     const slides = document.querySelectorAll('.carousel-slide');
     const prevBtn = document.querySelector('.carousel-prev');
@@ -24,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let slideInterval;
     
 
+    // nav indicator dots
     function createIndicators() {
         indicatorsContainer.innerHTML = '';
         slides.forEach((_, index) => {
@@ -35,17 +39,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-
+    // init carousel
     function initCarousel() {
         createIndicators();
         updateCarousel();
         startAutoSlide();
         
-
+        // pause autoslide on hover
         carouselContainer.addEventListener('mouseenter', pauseAutoSlide);
         carouselContainer.addEventListener('mouseleave', startAutoSlide);
         
 
+        // prev and next button handlers
         prevBtn.addEventListener('click', () => {
             pauseAutoSlide();
             goToPrevSlide();
@@ -57,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
- 
+    // update visible slide and ind carousel
     function updateCarousel() {
         slides.forEach((slide, index) => {
             slide.classList.remove('active');
@@ -74,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
   
+    // nav to slides
     function goToSlide(index) {
         currentIndex = index;
         if (currentIndex >= slides.length) currentIndex = 0;
@@ -93,17 +99,18 @@ document.addEventListener('DOMContentLoaded', function() {
         updateCarousel();
     }
     
- 
+    // auto-roation/slide
     function startAutoSlide() {
         pauseAutoSlide();
         slideInterval = setInterval(goToNextSlide, 5000);
     }
     
+    // pause
     function pauseAutoSlide() {
         clearInterval(slideInterval);
     }
     
-
+    // touch support
     let touchStartX = 0;
     let touchEndX = 0;
     
@@ -112,12 +119,14 @@ document.addEventListener('DOMContentLoaded', function() {
         pauseAutoSlide();
     }, {passive: true});
     
+    // handling swipes and touch
     carouselContainer.addEventListener('touchend', (e) => {
         touchEndX = e.changedTouches[0].screenX;
         handleSwipe();
         startAutoSlide();
     }, {passive: true});
     
+    // swipe gesture processing
     function handleSwipe() {
         const difference = touchStartX - touchEndX;
         if (difference > 50) { 
@@ -127,5 +136,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+    // init carousel
     initCarousel();
 });

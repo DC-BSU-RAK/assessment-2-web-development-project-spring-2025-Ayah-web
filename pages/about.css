@@ -1,3 +1,4 @@
+/* body styling */
 body {
     display: flex;
     flex-direction: column;
@@ -10,6 +11,7 @@ body {
     overflow-x: hidden;
 }
 
+/* navbar styling */
 .navbar {
     position: fixed;
     left: 20px;
@@ -30,6 +32,7 @@ body {
     transition: padding-left 0.2s ease;
 }
 
+/* navbar hover animation */
 .nav-item:hover {
     padding-left: 20px;
     text-decoration: white underline;
@@ -52,6 +55,7 @@ body {
     padding: 4px;
 }
 
+/* wrapper for about element styling */
 .wrapper {
     display: flex;
     flex: 1;
@@ -65,6 +69,7 @@ body {
     margin: 0 auto;
 }
 
+/* about tab styling */
 .about-tab {
     margin-top: 20px;
     position: relative;
@@ -117,6 +122,7 @@ body {
     padding: 10px 20px 20px;
 }
 
+/* windows history carousel styling */
 .windows-history-carousel {
     margin: 20px 0;
     position: relative;
@@ -234,6 +240,7 @@ body {
     background-color: #000080;
 }
 
+/* references styling */
 .references {
     margin-top: 20px;
     padding: 10px;
@@ -258,12 +265,13 @@ body {
     line-height: 1.4;
 }
 
+/* anchor tag styling */
 a {
     color: #000080;
     text-decoration: underline;
 }
 
-
+/* exit button styling */
 .exit-btn {
     width: 30px;
     height: 30px;
@@ -276,11 +284,13 @@ a {
     cursor: pointer;
 }
 
+/* exit button hover animation */
 .exit-btn:hover {
     background-color: #ff0000;
     color: white;
 }
 
+/* footer styling */
 .footer {
     position: relative;
     bottom: 0;
@@ -301,6 +311,7 @@ a {
     color: black;
 }
 
+/* button styling */
 button:focus, a:focus {
     outline: 2px dotted #000080;
 }
